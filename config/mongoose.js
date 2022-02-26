@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/shortURL");
+mongoose.connect("mongodb://localhost/creatShortURL");
 const db = mongoose.connection;
 db.on("error", () => {
   console.log("mongodb error");

@@ -4,4 +4,4 @@ const urlSchema = new Schema({
   originalURL: { type: String, required: true },
   shortenCode: { type: String, required: true },
 });
-module.exports = mongoose.model("shortUrl", urlSchema);
+module.exports = mongoose.model("URLModel", urlSchema);

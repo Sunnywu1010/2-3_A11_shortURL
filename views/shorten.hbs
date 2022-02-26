@@ -1,0 +1,32 @@
+<form action="/urls" method="POST" style="display: inline;">
+  <div class="input-group p-3">
+    <input
+      id="shorten-URL"
+      class="form-control"
+      type="text"
+      placeholder="http://..."
+      name="URL"
+      value="{{shortenUrl}}"
+      readonly
+    />
+    <button
+      id="copy-button"
+      class="btn btn-success"
+      type="button"
+    >Copy</button>
+
+  </div>
+
+
+
+</form>
+
+  <script>
+    const shortenURL=document.getElementById("shorten-URL")
+    const copyButton=document.getElementById("copy-button")
+    copyButton.onclick=function(){
+      shortenURL.select()
+      document.execCommand("Copy")
+      alert("Copied!")
+    }
+  </script>
