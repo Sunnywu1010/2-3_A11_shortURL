@@ -4,10 +4,10 @@ const router = express.Router();
 // Include Packages
 const URLModel = require("../../models/URLModel");
 // route setting of homepage
-
 router.get("/", (req, res) => {
   res.render("index");
 });
+// route setting of shorten URL
 router.get("/:urls", (req, res) => {
   console.log(req.params);
   const urls = req.params.urls;
@@ -18,4 +18,5 @@ router.get("/:urls", (req, res) => {
     .then((URL) => res.redirect(URL.originalURL))
     .catch((error) => console.log(error));
 });
+// export
 module.exports = router;

@@ -1,3 +1,4 @@
+// create shorten code
 function generateShortCode() {
   let shortCode = "";
   let text = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
