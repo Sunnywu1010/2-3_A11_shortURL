@@ -18,29 +18,45 @@
 
 </h2>
 <p>
-  Clone this repository to create a local copy on your computer
+  Clone this repository to create a local copy in your computer
 
 </p>
 <p>
 
-  Open the repository on your computer, and enter the folder by your local terminal. 
+  Open the repository in your computer, and enter this folder by your local terminal. 
 </p>
 <p>
+  Please install the Development Tools metioned below
+</p>
 
-  Input :
+  ````
   npm install
-  After installation, 
-  Input:
+  ````
   
-  npm run start
-  Open browser to get into the url below:
-  
-  The server is listening on http://localhost:3000
-  mongodb connected!
-  If you want to stop it:
-  
-  ctrl + c
+<p>
+  Please run the server as below
 </p>
+  
+  ````
+  npm run start
+  ````
+<p>
+  Run browser when your terminal shows the link below
+</p>
+
+  ````
+  This server is running on http://localhost:3000
+  mongodb connected
+  ````
+  
+<p>
+  Please stop the server by
+</p>
+
+  ````
+  ctrl + c
+  ````
+
 
 <h2>
   Development Tools
