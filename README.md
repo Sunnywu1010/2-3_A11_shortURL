@@ -26,7 +26,11 @@
   Open the repository in your computer, and enter this folder by your local terminal. 
 </p>
 <p>
+<<<<<<< HEAD
   Please install the Development Tools mentioned below
+=======
+  Please install the Development Tools metioned below
+>>>>>>> 9755f89f944947984ce646e3077a9a31ef9fcba1
 </p>
 
   ````
