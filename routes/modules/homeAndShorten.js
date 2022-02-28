@@ -9,11 +9,8 @@ router.get("/", (req, res) => {
 });
 // route setting of shorten URL
 router.get("/:urls", (req, res) => {
-  console.log(req.params);
   const urls = req.params.urls;
-  if (urls === "favicon.ico") {
-    return;
-  }
+
   URLModel.findOne({ shortenCode: urls })
     .then((URL) => res.redirect(URL.originalURL))
     .catch((error) => console.log(error));
