@@ -1,12 +1,13 @@
+
+{{> message}}
 <form action="/urls" method="POST" style="display: inline;">
   <div class="input-group p-3">
     <input
       id="shorten-URL"
       class="form-control"
-      type="url"
+      type="string"
       placeholder="http://..."
       name="URL"
-      required
     />
     <button
       id="copy-button"

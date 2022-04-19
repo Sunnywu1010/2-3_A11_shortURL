@@ -10,10 +10,13 @@ router.get("/", (req, res) => {
 // route setting of shorten URL
 router.get("/:urls", (req, res) => {
   const urls = req.params.urls;
-
-  URLModel.findOne({ shortenCode: urls })
-    .then((URL) => res.redirect(URL.originalURL))
-    .catch((error) => console.log(error));
+  if (urls==="favicon.ico") {
+    res.redirect("/");
+  } else {
+    URLModel.findOne({ shortenCode: urls })
+      .then((URL) => res.redirect(URL.originalURL))
+      .catch((error) => console.log(error));
+  }
 });
 // export
 module.exports = router;
