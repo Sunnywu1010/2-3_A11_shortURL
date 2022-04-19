@@ -1,20 +1,24 @@
 
+<div class="mx-5">
+
 {{> message}}
+
 <form action="/urls" method="POST" style="display: inline;">
   <div class="input-group p-3">
     <input
       id="shorten-URL"
       class="form-control"
-      type="string"
+      type="url"
       placeholder="http://..."
       name="URL"
     />
     <button
       id="copy-button"
-      class="btn btn-success"
+      class="btn btn-primary"
       type="submit"
     >Shorten</button>
 
   </div>
 
 </form>
+</div>
