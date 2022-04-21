@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 const urlSchema = new Schema({
   originalURL: { type: String, required: true },
-  shortenCode: { type: String, required: true },
-});
-module.exports = mongoose.model("URLModel", urlSchema);
+  shortenCode: { type: String, required: true }
+})
+module.exports = mongoose.model('URLModel', urlSchema)
