@@ -2,10 +2,10 @@
 const express = require('express')
 const router = express.Router()
 // Include Packages
-const homeAndShorten = require('./modules/homeAndShorten')
-const createUrls = require('./modules/createUrls')
+const home = require('./modules/home')
+const urls = require('./modules/URL')
 // route setting
-router.use('/urls', createUrls)
-router.use('/', homeAndShorten)
+router.use('/urls', urls)
+router.use('/', home)
 // export
 module.exports = router
